@@ -41,9 +41,8 @@ const LoginForm = () => {
       <div className={`${login.panel} ${login.leftpanel}`}>
         <div className={login.content}>
           <h3>New here ?</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, ex
-            ratione. Aliquid!
+          <p className={login.para}>
+            Just got to know about Adopt-A-Paw? Sign up right away!
           </p>
           <Link to = "/signup"><button className={`${login.btn1} ${login.transparent}`} id="sign-up-btn">
             Sign up

@@ -46,9 +46,8 @@ const LoginForm = () => {
         <div className={`${login.panel} ${login.leftpanel}`}>
           <div className={login.content}>
             <h3>One of us ?</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laboriosam
-              ad deleniti.
+            <p className={login.para}>
+              Already a part of our community? Login to your existing account!
             </p>
             <Link to= "/backtologin"><button className={`${login.btn1} ${login.transparent}`} id="sign-in-btn">
               Log in
