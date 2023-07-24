@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+
 const HomePage = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [isMenuActive, setIsMenuActive] = useState(false);
@@ -21,7 +22,7 @@ const HomePage = () => {
   };
 
   return (
-    <div>
+    <div className = "bigbody">
       <header className={isSticky ? 'sticky' : ''}>
         <a href="#" className="logo">Adopt-a-<span>Paw</span></a>
         <div className={`menutoggle ${isMenuActive ? 'active' : ''}`} onClick={toggleMenu}></div>

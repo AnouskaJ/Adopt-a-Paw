@@ -1,11 +1,12 @@
-body {
+.body {
     display: flex;
     align-items: center;
     background: url(/src/assets/new.png);
+    height: 100vh;
 }
 
 .new {
-    margin-top: 200px;
+    margin-top: -50px;
     margin-right: 200px;
     margin-left: 60px;
     position: relative;
@@ -31,7 +32,7 @@ span {
     font-family: 'Sacramento', cursive;
 }
 
-button {
+.button1 {
     width: 10em;
     position: relative;
     height: 3.5em;
@@ -48,7 +49,7 @@ button {
     cursor: pointer;
 }
 
-button::after {
+.button1::after {
     content: "";
     position: absolute;
     top: -10px;
@@ -60,7 +61,7 @@ button::after {
     cursor: pointer;
 }
 
-button::before {
+.button1::before {
     content: "";
     transform-origin: center;
     position: absolute;
@@ -72,18 +73,18 @@ button::before {
     cursor: pointer;
 }
 
-button:hover::before,
-button:hover::after {
+.button1:hover::before,
+.button1:hover::after {
     transform: scale(0)
 }
 
-button:hover {
+.button1:hover {
     box-shadow: inset 0px 0px 25px #e61da3;
     cursor: pointer;
 }
 
 
-.new .ajax-loader .paw {
+.new .ajax .paw {
 
     margin-left: 420px;
     /* Adjust the value to control the spacing between paw prints */
@@ -98,7 +99,7 @@ button:hover {
         font-size: 25px;
     }
 
-    button {
+    .button1 {
         margin-left: 5%;
         margin-top: 20px;
     }
@@ -109,7 +110,7 @@ button:hover {
         margin-right: 120px;
     }
 
-    .new .ajax-loader .paw {
+    .new .ajax .paw {
 
         margin-left: 170px;
         /* Adjust the value to control the spacing between paw prints */
@@ -125,7 +126,7 @@ button:hover {
         font-size: 20px;
     }
 
-    button {
+    .button1 {
         margin-left: 5%;
         margin-top: 30px;
     }
@@ -141,10 +142,10 @@ button:hover {
     }
 }
 
-.ajax-loader,
+.ajax,
 .ajax-loader2,
 .ajax-loader3,
-.ajax-loader4 {
+.ajax {
     position: absolute;
     transform-origin: 50% 50%;
     font-size: 50px;
@@ -153,43 +154,43 @@ button:hover {
     color: #333;
 }
 
-.ajax-loader .paw {
+.ajax .paw {
     width: 1.5em;
     height: 2em;
     animation: 2050ms pawAnimation ease-in-out infinite;
     opacity: 0;
 }
 
-.ajax-loader .paw svg,
-.ajax-loader .paw i {
+.ajax .paw svg,
+.ajax .paw i {
     width: 100%;
     height: 100%;
 }
 
-.ajax-loader .paw:nth-child(odd) {
+.ajax .paw:nth-child(odd) {
     transform: rotate(0deg);
 }
 
-.ajax-loader .paw:nth-child(even) {
+.ajax .paw:nth-child(even) {
     transform: rotate(0deg) scaleX(-1) translate(15%, -50%);
 }
 
-.ajax-loader .paw:nth-child(1) {
+.ajax .paw:nth-child(1) {
     animation-delay: 2.25s;
     transform: rotate(-8deg) translate3d(0%, -50%, 0);
 }
 
-.ajax-loader .paw:nth-child(2) {
+.ajax .paw:nth-child(2) {
     animation-delay: 1.75s;
     transform: rotate(-8deg) scaleX(-1) translate3d(0%, -60%, 0);
 }
 
-.ajax-loader .paw:nth-child(3) {
+.ajax .paw:nth-child(3) {
     animation-delay: 1.25s;
     transform: rotate(0deg) translate3d(0%, -48%, 0);
 }
 
-.ajax-loader .paw:nth-child(4) {
+.ajax .paw:nth-child(4) {
     animation-delay: 0.75s;
     transform: rotate(0deg) scaleX(-1) translate3d(0%, -50%, 0);
 }
@@ -199,7 +200,7 @@ button:hover {
 
 
 
-.ajax-loader .paw.no-cssanimations {
+.ajax .paw.no-cssanimations {
     opacity: 1;
 }
 
@@ -231,31 +232,31 @@ button:hover {
     }
 }
 
-.ajax-loader {
+.ajax {
     top: 15%;
     left: 10%;
     transform: rotate(10deg) translate(-50%, 0%);
 }
 
-.ajax-loader2 {
+.ajax {
     top: 15%;
     right: 20%;
     transform: rotate(-10deg) translate(-50%, 0%);
 }
 
-.ajax-loader3 {
+.ajax {
     top: 45%;
     left: 30%;
     transform: rotate(150deg) translate(-50%, 0%);
 }
 
-.ajax-loader4 {
+.ajax {
     top: 45%;
     right: 35%;
     transform: rotate(200deg) translate(-50%, 0%);
 }
 
-.new .ajax-loader {
+.new .ajax {
     position: absolute;
     bottom: -50px;
     /* Adjust the value as per your need */

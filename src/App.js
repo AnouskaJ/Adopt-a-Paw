@@ -4,11 +4,7 @@ import Start from "./components/Start";
 import HomePage from "./components/HomePage";
 import LoginForm from "./components/Login";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-
-import "./styles/start.css";
 import "./styles/Home.css";
-import "./styles/login.css"
 
 
 function App() {
