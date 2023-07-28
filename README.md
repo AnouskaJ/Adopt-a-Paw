@@ -1,7 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+> > > > > > > gitlab/main
+
 # Adopt-a-Paw
 
-Adopt-a-Paw is a centralized web application aimed at streamlining the pet adoption process, providing detailed pet information, and offering valuable care resources. This project aims to increase successful adoptions, promote responsible pet ownership, and ensure the well-being of adopted animals. 
+Adopt-a-Paw is a centralized web application aimed at streamlining the pet adoption process, providing detailed pet information, and offering valuable care resources. This project aims to increase successful adoptions, promote responsible pet ownership, and ensure the well-being of adopted animals.
 
 ## Problem Statement
 
@@ -63,7 +68,9 @@ To get started with Adopt-a-Paw, follow these steps:
 ## Conclusion
 
 Adopt-a-Paw aims to revolutionize the pet adoption process by providing a centralized platform that connects potential adopters with shelters and offers valuable resources for pet care. By leveraging technology and promoting responsible pet ownership, Adopt-a-Paw strives to ensure the well-being of adopted animals while bringing joy to the lives of both pets and their owners.
+<<<<<<< HEAD
 =======
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -134,4 +141,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> master
+
+> > > > > > > # master
+> > > > > > >
+> > > > > > > gitlab/main
