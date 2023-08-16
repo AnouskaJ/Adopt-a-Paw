@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-> > > > > > > gitlab/main
 
 # Adopt-a-Paw
 
