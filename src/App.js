@@ -1,12 +1,11 @@
-
 import React from "react";
 import Start from "./components/Start";
 import HomePage from "./components/HomePage";
 import LoginForm from "./components/Login";
-import LoginFor from "./components/Signup";
+import SignUpForm from "./components/Signup";
+import Dashboard from "./components/Dashboard";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "./styles/Home.css";
-
 
 function App() {
   return (
@@ -15,17 +14,12 @@ function App() {
         <Route path="/" element={<Start />} />
         <Route path="/other" element={<HomePage />} />
         <Route path="/login" element={<LoginForm />} />
-        <Route path="/signup" element={<LoginFor />} />
+        <Route path="/signup" element={<SignUpForm />} />
         <Route path="/backtologin" element={<LoginForm />} />
-      
-      
-       
-
-        {/* Add more routes as needed */}
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
   );
 }
 
 export default App;
-
