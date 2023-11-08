@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -13,6 +14,8 @@ function ViewAll() {
             </div>
             <div className="text">
               <h3>British Shorthair</h3>
+              <h5>Location:Bangalore</h5>
+              <h5>Contact: HappyHome@gmail.com</h5>
             </div>
           </div>
           <div className="box">
@@ -156,6 +159,7 @@ function ViewAll() {
             </div>
           </div>
         </div>
+        <Link to="/other"><a href="#" className="btn">Go back</a></Link>
       </section>
     </div>
   );
