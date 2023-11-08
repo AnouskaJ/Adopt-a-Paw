@@ -3,6 +3,7 @@ import Start from "./components/Start";
 import HomePage from "./components/HomePage";
 import LoginForm from "./components/Login";
 import SignUpForm from "./components/Signup";
+import ViewAll from "./components/viewall";
 import Dashboard from "./components/Dashboard";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "./styles/Home.css";
@@ -17,6 +18,7 @@ function App() {
         <Route path="/signup" element={<SignUpForm />} />
         <Route path="/backtologin" element={<LoginForm />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/viewall" element={<ViewAll/>}/>
       </Routes>
     </Router>
   );

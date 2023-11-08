@@ -110,7 +110,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="title">
-          <a href="#" className="btn">View All</a>
+           <Link to="/viewall"><a href="#" className="btn">View All</a></Link>
         </div>
       </section>
       <section className="testimonial" id="testimonials">
