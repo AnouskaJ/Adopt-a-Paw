@@ -102,7 +102,7 @@ const HomePage = () => {
           </div>
           <div className="box">
             <div className="imgbx">
-              <img src="https://www.pawtracks.com/wp-content/uploads/sites/2/2022/10/gray-munchkin-cat-kitten.jpg?p=1" alt="Cold Drinks" />
+              <img src="https://www.pawtracks.com/wp-content/uploads/sites/2/2022/10/gray-munchkin-cat-kitten.jpg?p=1" alt="Cat" />
             </div>
             <div className="text">
               <h3>Coco, Munchkin Cat</h3>
