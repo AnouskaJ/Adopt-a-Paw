@@ -7,6 +7,7 @@ import ViewAll from "./components/viewall";
 import Dashboard from "./components/Dashboard";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "./styles/Home.css";
+import"./styles/viewall.css";
 
 function App() {
   return (
