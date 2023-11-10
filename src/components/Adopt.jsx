@@ -7,7 +7,7 @@ function Adopt() {
   const [pets, setPets] = useState([]);
 
   useEffect(() => {
-    axios.get('/pets/pets.json') // JSON file path
+    axios.get('/pets/pets.json') 
       .then((response) => {
         console.log('Fetched data:', response.data);
         setPets(response.data);
