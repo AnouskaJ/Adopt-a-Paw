@@ -3,11 +3,13 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import AdoptModel from './AdoptModel';  
 import '../styles/AnimalDetails.css';
 
 function AnimalDetails() {
   const { petId } = useParams();
   const [petDetails, setPetDetails] = useState(null);
+  const [showAdoptModel, setShowAdoptModel] = useState(false);
 
   useEffect(() => {
     axios
@@ -20,6 +22,14 @@ function AnimalDetails() {
         console.error('Error fetching pet details:', error);
       });
   }, [petId]);
+
+  const handleAdoptClick = () => {
+    setShowAdoptModel(true);
+  };
+
+  const handleCloseModel = () => {
+    setShowAdoptModel(false);
+  };
 
   if (!petDetails) {
     return <div>Loading...</div>;
@@ -47,9 +57,19 @@ function AnimalDetails() {
         <p>Gender: {petDetails.Gender}</p>
         <p>Description: {petDetails.Description}</p>
 
-        <button className="adopt-button">Adopt Now</button>
-        <button className="contact-button">Click here for Contact Details</button>
+        <button className="adopt-button" onClick={handleAdoptClick}>
+          Adopt Now
+        </button>
       </div>
+
+      {showAdoptModel && (
+        <AdoptModel
+          rescuerId={petDetails.RescuerID}
+          ownerName={petDetails.OwnerName}
+          ownerContact={petDetails.OwnerContact}
+          onClose={handleCloseModel}
+        />
+      )}
     </div>
   );
 }

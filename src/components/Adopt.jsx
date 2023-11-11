@@ -9,20 +9,15 @@ function Adopt() {
   useEffect(() => {
     axios.get('/pets/pets.json')
       .then((response) => {
-        const petsWithImages = response.data.filter((pet) =>
-          imageExists(`/pets/images/${pet.PetID}-1.jpg`)
-        );
-        setPets(petsWithImages);
+        setPets(response.data);
       })
       .catch((error) => {
         console.error('Error fetching data:', error);
       });
   }, []);
 
-  const imageExists = (path) => {
-    const img = new Image();
-    img.src = path;
-    return img.complete;
+  const handleImageError = (petId) => {
+    setPets((prevPets) => prevPets.filter((pet) => pet.PetID !== petId));
   };
 
   return (
@@ -33,7 +28,11 @@ function Adopt() {
             <Link to={`/adopt/${pet.PetID}`} key={pet.PetID}>
               <div className="box">
                 <div className="imgbx">
-                  <img src={`/pets/images/${pet.PetID}-1.jpg`} alt={pet.Name} />
+                  <img
+                    src={`/pets/images/${pet.PetID}-1.jpg`}
+                    alt={pet.Name}
+                    onError={() => handleImageError(pet.PetID)}
+                  />
                 </div>
                 <div className="text">
                   <h3>{pet.Name}</h3>
