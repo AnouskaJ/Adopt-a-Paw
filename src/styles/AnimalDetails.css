@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+.animal-details {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.animal-details .carousel-container {
+    width: 48%;
+    border: 10px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.animal-details .carousel-container img {
+    width: 100%; /* Make the image take up 100% of the container width */
+    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.animal-details .info-container {
+    width: 48%;
+    margin-left: 4%;
+}
+
+.animal-details h2 {
+    color: #111;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.animal-details p {
+    color: #555;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.animal-details .btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.animal-details .adopt-btn,
+.animal-details .contact-btn {
+    padding: 12px 24px;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.animal-details .adopt-btn {
+    background-color: #8e2e4e;
+}
+
+.animal-details .contact-btn {
+    background-color: #3b5998;
+}
+
+.animal-details .adopt-btn:hover,
+.animal-details .contact-btn:hover {
+    opacity: 0.8;
+}
