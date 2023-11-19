@@ -5,6 +5,7 @@ import LoginForm from "./components/Login";
 import SignUpForm from "./components/Signup";
 import ViewAll from "./components/viewall";
 import UserProfile from "./components/Dashboard";
+import CardComponent from "./components/Services";
 import Adopt from "./components/Adopt";
 import AnimalDetails from "./components/AnimalDetails";
 import AdoptModel from "./components/AdoptModel";
@@ -15,6 +16,7 @@ import "./styles/dashboard.css";
 import "./styles/Adopt.css";
 import "./styles/AnimalDetails.css"
 import "./styles/AdoptModel.css"
+import "./styles/services.css"
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
         <Route path="/Adopt" element={<Adopt />} />
         <Route path="/adopt/:petId" element={<AnimalDetails />} />
         <Route path="/adopt-model/:petId" element={<AdoptModel />} />
+        <Route path="/services" element={<CardComponent />} />
       </Routes>
     </Router>
   );

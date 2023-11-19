@@ -31,7 +31,7 @@ const HomePage = () => {
           <li><a href="#about">About Us</a></li>
           <li><a href="#menu">Adopt</a></li>
           <Link to="/login"><li><a>Login</a></li></Link>
-          <li><a href="#testimonials">Success Stories</a></li>
+          <Link to="/services"><li><a>Services</a></li></Link>
           <li><a href="#contactus">Contact</a></li>
         </ul>
       </header>

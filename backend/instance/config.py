@@ -1,2 +1,3 @@
 SECRET_KEY = 'secret-key'
-SQLALCHEMY_DATABASE_URI = 'postgresql://backend:backend@localhost/adoptapaw-db'
+SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:mysecretpassword@localhost/adoptapaw_db'
+
