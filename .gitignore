@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Ignore images folder in src/pets
+/src/pets/images/
+
+# Ignore images folder in public/pets
+/public/pets/images/

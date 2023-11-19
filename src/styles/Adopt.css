@@ -1,0 +1,99 @@
+section {
+    padding: 80px;
+    margin-top: 0px;
+}
+
+button {
+    padding: 15px;
+    background-color: #583232;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.row .col50 {
+    position: relative;
+    width: 48%;
+}
+
+.titeText {
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titeText span {
+    color: #8e2e4e;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.imgbx {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+
+.imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.menu .content .box {
+    width: 340px;
+    margin: 20px;
+    border: 5px solid #583232;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.menu .content .box .imgbx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .content .box .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    padding: 15px 0 5px;
+    text-align: center;
+}
+
+.text h3 {
+    font-weight: 400;
+    color: #111;
+}
