@@ -1,6 +1,7 @@
 .backgroundc{
-    background-color: #c17474;
-    margin-left: 20px;
+    background-color: #c3bcb4;
+    margin-left: 0px;
+    padding: 30px;
 }
 .headerc{
     margin-left: 20px;
@@ -8,15 +9,16 @@
 }
 .cards {
     height: 180px;
-    width: 700px;
+    width: 800px;
     margin-bottom: 30px;
-    background: rgb(198, 177, 177);
+    background:rgb(187, 150, 150);
     border-radius: 20px;
     backdrop-filter: blur(10px);
     transition: 0.5s ease-in-out;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
+    padding: 20px;
 }
 
 .cards:hover {
@@ -59,9 +61,10 @@
 .h1 {
     font-size: 16px;
     font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 .p {
-    font-size: 12px;
-    font-weight: lighter;
+    font-size: 16px;
 }
