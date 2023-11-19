@@ -164,7 +164,7 @@ const HomePage = () => {
     <h2 className="titeText"><span>C</span>ontact Us</h2>
     <p>Can't wait to adopt? For further information, contact us!</p>
   </div>
-  <form action="https://formspree.io/f/xeqbwvkv" method="POST">
+  <form action="https://formspree.io/f/mvojndqe" method="POST">
     <div className="contactform">
       <h3>Send Message</h3>
       <div className="inputbox">
