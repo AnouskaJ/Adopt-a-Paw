@@ -50,7 +50,6 @@ function AnimalDetails() {
         </Carousel>
       </div>
       <div className="details-container">
-        {/* Rest of your details content */}
         <h2>{petDetails.Name}</h2>
         <p>Age: {petDetails.Age}</p>
         <p>Breed: {petDetails.Breed1}</p>
